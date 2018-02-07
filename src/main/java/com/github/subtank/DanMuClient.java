@@ -14,7 +14,7 @@ import javafx.stage.WindowEvent;
 
 public class DanMuClient extends Application{
 	private static final String NAME = "pandaTV DanMu Logger";
-	private static final String VERSION = "0.0.1-A1";
+	private static final String VERSION = "0.0.5";
 	private static final String AUTHOR = "subtank";
 	public static String title() {
 		return String.format("%s by %s V%s", NAME, AUTHOR, VERSION);
