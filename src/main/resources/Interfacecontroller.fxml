@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" stylesheets="main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.subtank.Controler.InterfaceController">
+  <children>
+    <Label fx:id="Title" alignment="CENTER" layoutY="15.0" prefWidth="400.0" text="PandaTV DanMu Logger" />
+    
+    <Label fx:id="RoomId" layoutX="20.0" layoutY="65.0" prefHeight="20.0" prefWidth="80.0" text="Room ID: " />
+    <TextField fx:id="RoomIdText" layoutX="110.0" layoutY="65.0" prefWidth="80.0" />
+    <CheckBox fx:id="ShowDMLCheck" layoutX="200.0" layoutY="67.0" />
+    <Label fx:id="ShowDML" layoutX="225.0" layoutY="65.0" text="Show DanMu Log" />
+    
+    <Label fx:id="LoggerSavePath" layoutX="20.0" layoutY="106.0" text="Logger Save Path: " />
+    <Button fx:id="SavePath" layoutX="175.0" layoutY="105.0" onAction="#selectSavePath" prefWidth="50.0" text="..." />
+    
+    <TextField fx:id="SavePathText" editable="false" layoutX="20.0" layoutY="140.0" prefWidth="200.0" text="." />
+    
+    <Button fx:id="Start" alignment="CENTER" layoutX="100.0" layoutY="180.0" onAction="#startLogger" prefHeight="30.0" prefWidth="200.0" text="Start Logger" />
+    
+    <TextArea fx:id="LoggerText" layoutX="25.0" layoutY="243.0" prefHeight="200.0" prefWidth="350.0" />
+      <Label layoutX="240.0" layoutY="106.0" text="File Name type:" />
+      <Label layoutX="240.0" layoutY="140.0" prefHeight="15.0" prefWidth="120.0" text="YY/mm/dd.txt" />
+  </children>
+</AnchorPane>
